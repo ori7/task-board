@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="h1">
+            <img src="files/title.png" alt="my task board">
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class='col-sm-3'></div>
+            <form class="form-horizontal col-sm-6">
+                <br>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label"></label>
+                    <div class="col-sm-11">
+                        <textarea class="form-control" rows="3" placeholder="Task" id="task" required></textarea>
+                        <small id="commentTask">Write a task in the note!</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-11">
+                        <input type="date" class="btn btn-default" id="date" required>
+                        <div><small id="commentDate">Write a date in the note!</small></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-9">
+                        <input type="time" class="btn btn-default" id="time">
+                        <div><small id="commentTime">Write a time exactly!</small></div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-warning" id="save">Save</button>
+                    </div>
+                </div>
+            </form>
+            <div class='col-sm-3'></div>
+        </div>
+        <div class="row" id="note">
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

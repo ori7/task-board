@@ -1,0 +1,83 @@
+body{
+    background-image: url(/files/tile.jpg);
+}
+
+#h1{
+  text-align: center;
+  margin-top: 2%;
+}
+
+.form-horizontal{
+    background-image: url(/files/formbg.jpg);
+    margin: 1%;
+    max-width: 800px;
+}
+
+small{
+    color: red;
+    visibility: hidden;
+}
+
+.note{
+    background-image: url(/files/notebg.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 250px;
+    margin: 2% 4%;
+    position: relative;
+    font-family: 'Gloria Hallelujah', cursive;
+    word-break: break-all;
+}
+
+.note .glyphicon-remove{
+    color: red;
+    font-size: 40px;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+ 
+.note:hover .glyphicon-remove{  
+    visibility: visible;
+}
+
+main>#note p{
+   width: 160px; 
+   font-size: 18px;
+}
+
+main>#note .noteContent{
+    overflow-y: auto;
+    height: 150px;
+}
+
+main>#note .date , .time{
+    position: absolute;
+}
+
+main>#note .date{
+    bottom: 22px;
+}
+
+main>#note .time{
+    bottom: 2px;
+}
+
+.fadeIn{
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fadeOut{
+    animation: fadeOut 2s;
+}
+
+@keyframes fadeOut{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
